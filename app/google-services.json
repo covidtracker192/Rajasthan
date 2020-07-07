@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "451058278114",
+    "firebase_url": "https://rajasthan-f6adc.firebaseio.com",
+    "project_id": "rajasthan-f6adc",
+    "storage_bucket": "rajasthan-f6adc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451058278114:android:f751d6426d04ee638d08bb",
+        "android_client_info": {
+          "package_name": "com.covid19.rajasthan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451058278114-bohq7md4oeilo0klsp27e2nmio91keuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK5iW09P69p53ol3Z77f_m23fm4c4l800"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451058278114-bohq7md4oeilo0klsp27e2nmio91keuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
