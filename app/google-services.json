@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "451058278114-03mpad6qnnhvb1ccq5h521r1693oforc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.covid19.rajasthan",
+            "certificate_hash": "5cd7d2cfd309f217949f235055aae50996335fce"
+          }
+        },
+        {
           "client_id": "451058278114-bohq7md4oeilo0klsp27e2nmio91keuv.apps.googleusercontent.com",
           "client_type": 3
         }
