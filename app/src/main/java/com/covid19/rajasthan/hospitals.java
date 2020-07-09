@@ -52,72 +52,82 @@ public class hospitals extends FragmentActivity implements OnMapReadyCallback {
         mMap.setMyLocationEnabled(true);
 
         // Test Center 1
-        final LatLng center1 = new LatLng(15.462846, 73.857513);
-        mMap.addMarker(new MarkerOptions().position(center1).title("Goa Medical College & Hospital").snippet("website: http://www.gmc.goa.gov.in/index.php/en/"));
+        final LatLng center1 = new LatLng(26.741301, 74.613675);
+        mMap.addMarker(new MarkerOptions().position(center1).title("JLN Medical College").snippet("website: https://education.rajasthan.gov.in/jlnmcajmer"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center1));
 
         //Test Center 2
-        final LatLng center2 = new LatLng(15.596924, 73.820260);
-        mMap.addMarker(new MarkerOptions().position(center2).title("District Hospital, Mapusa").snippet("website: http://www.dhsgoa.gov.in/tel-nos.htm"));
+        final LatLng center2 = new LatLng(27.331818, 75.907692);
+        mMap.addMarker(new MarkerOptions().position(center2).title("Dr. B. Lal Clinical Laboratory Pvt. Ltd.").snippet("website: https://www.blallab.com/"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center2));
 
         //Test Center 3
-        final LatLng center3 = new LatLng(15.605917, 73.813276);
-        mMap.addMarker(new MarkerOptions().position(center3).title("Dr. Kolwalkar's Galaxy Hospital").snippet("website: http://galaxyhospitalgoa.com/"));
+        final LatLng center3 = new LatLng(27.221000, 75.797835);
+        mMap.addMarker(new MarkerOptions().position(center3).title("Krsnaa Diagnostics Pvt Ltd National institute of Ayurveda"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center3));
 
         //Test Center 4
-        final LatLng center4 = new LatLng(15.268915, 73.965600);
-        mMap.addMarker(new MarkerOptions().position(center4).title("Victor Hospital").snippet("website: http://victorhospital.com/"));
+        final LatLng center4 = new LatLng(26.893535, 75.812483);
+        mMap.addMarker(new MarkerOptions().position(center4).title("Brig T.K. Narayanan Dept of Pathology").snippet("website: http://www.sdmh.in/departments/pathology-transfusion-medicine"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center4));
 
         //Test Center 5
-        final LatLng center5 = new LatLng(15.460034, 73.813516);
-        mMap.addMarker(new MarkerOptions().position(center5).title("Manipal Hospitals Goa").snippet("website: https://www.manipalhospitals.com/goa/"));
+        final LatLng center5 = new LatLng(27.214396, 75.885719);
+        mMap.addMarker(new MarkerOptions().position(center5).title("Rajasthan University of Health Sciences").snippet("website: http://www.ruhsraj.org/"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center5));
 
         //Test Center 6
-        final LatLng center6 = new LatLng(15.604626, 73.820396);
-        mMap.addMarker(new MarkerOptions().position(center6).title("Vision Hospital in Mapusa Goa").snippet("website: https://visionhospitalgoa.com/"));
+        final LatLng center6 = new LatLng(27.253712, 75.841774);
+        mMap.addMarker(new MarkerOptions().position(center6).title("JNU Institute Of Medical Sciences And Research Centre").snippet("website: https://www.jnujaipur.ac.in/schools/institute-for-medical-sciences-and-research-centre/"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center6));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(6));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(center6));
 
         //Test Center 7
-        final LatLng center7 = new LatLng(15.597050, 73.820198);
-        mMap.addMarker(new MarkerOptions().position(center7).title("Asilo Hospital"));
+        final LatLng center7 = new LatLng(27.369409, 75.885724);
+        mMap.addMarker(new MarkerOptions().position(center7).title("SMS Medical College").snippet("website: https://education.rajasthan.gov.in/smsmcjaipur"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(center7));
+
+        //Test Center 8
+        final LatLng center8 = new LatLng(27.077530, 75.863746);
+        mMap.addMarker(new MarkerOptions().position(center8).title("Central Lab, The Mahatma Gandhi University of Medical Sciences and Technology").snippet("website: https://mgumst.org/contact-us.php"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(center8));
 
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
                 if(marker.getPosition().equals(center1)) {
-                    Uri uriUrl = Uri.parse("http://www.gmc.goa.gov.in/index.php/en/");
+                    Uri uriUrl = Uri.parse("https://education.rajasthan.gov.in/jlnmcajmer");
                     Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                     startActivity(launchBrowser);
                 }
                 else if(marker.getPosition().equals(center2)) {
-                    Uri uriUrl = Uri.parse("http://www.dhsgoa.gov.in/tel-nos.htm");
+                    Uri uriUrl = Uri.parse("https://www.blallab.com/");
                     Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                     startActivity(launchBrowser);
                 }
 
-                else if(marker.getPosition().equals(center3)) {
-                    Uri uriUrl = Uri.parse("http://galaxyhospitalgoa.com/");
-                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
-                    startActivity(launchBrowser);
-                }
                 else if(marker.getPosition().equals(center4)) {
-                    Uri uriUrl = Uri.parse("http://victorhospital.com/");
+                    Uri uriUrl = Uri.parse("http://www.sdmh.in/departments/pathology-transfusion-medicine");
                     Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                     startActivity(launchBrowser);
                 }
                 else if(marker.getPosition().equals(center5)) {
-                    Uri uriUrl = Uri.parse("https://www.manipalhospitals.com/goa/");
+                    Uri uriUrl = Uri.parse("http://www.ruhsraj.org/");
                     Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                     startActivity(launchBrowser);
                 }
                 else if(marker.getPosition().equals(center6)) {
-                    Uri uriUrl = Uri.parse("https://visionhospitalgoa.com/");
+                    Uri uriUrl = Uri.parse("https://www.jnujaipur.ac.in/schools/institute-for-medical-sciences-and-research-centre/");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+                else if(marker.getPosition().equals(center7)) {
+                    Uri uriUrl = Uri.parse("https://education.rajasthan.gov.in/smsmcjaipur");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+                else if(marker.getPosition().equals(center8)) {
+                    Uri uriUrl = Uri.parse("https://mgumst.org/contact-us.php");
                     Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                     startActivity(launchBrowser);
                 }
@@ -144,5 +154,5 @@ public class hospitals extends FragmentActivity implements OnMapReadyCallback {
         Intent intent = new Intent(hospitals.this, home.class);
         startActivity(intent);
         finish();
-    };
+    }
 }
